@@ -1,2 +1,2 @@
 # painlessDuck
-this is an ecommerce website for a gaming store
+this is an e-commerce website for a gaming store
