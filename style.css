@@ -1,0 +1,946 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    background-color: rgba(30, 20, 50, 0.85);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navBar {
+    width: 100%;
+    background-color: rgba(30, 20, 50);
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navBar.activeNavBar {
+    background-color: rgba(30, 20, 50, 0.45);
+}
+
+.navBar .logo {
+    width: 30%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.navBar .logo a h1 {
+    color: white;
+    height: 100%;
+    font-size: 32px;
+    text-align: center;
+}
+.navBar .logo a h1 i{
+    color: yellowgreen;
+}
+.navBar .menu-container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navBar .menu-container .search-and-other-icons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.top_menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    transition: 0.3s ease all;
+}
+
+.top_menu_bars {
+    color: white;
+    display: none;
+}
+
+.top_menu_bars:hover {
+    color: yellowgreen;
+}
+
+
+.top_menu:hover {
+    color: yellowgreen;
+    cursor: pointer;
+}
+.navBar .menu-container .search-and-other-icons p {
+    font-size: 16px;
+    transition: 0.3s ease all;
+}
+
+.navBar .menu-container .menu-ribbon {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.navBar .menu-container .menu-ribbon li{
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.navBar .menu-container .menu-ribbon li a {
+    color: white;
+    font-size: 16px;
+    transition: 0.3s ease all;
+}
+
+.navBar .menu-container .menu-ribbon li a:hover {
+    color: yellowgreen;
+    font-weight: 600;
+}
+
+
+/* offers section styling */
+.offers-container {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.offers-container .offers-slideshow {
+    width: 50%;
+    height: 420px;
+    background-color: gray;
+}
+
+.offers-container .my-offers {
+    width: 40%;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.offers-container .my-offers .pc-offer {
+    width: 95%;
+    height: 200px;
+    background-color: red;
+    margin-bottom: 10px;
+}
+
+.offers-container .my-offers .other-offers {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.offers-container .my-offers .other-offers .offer1,
+.offers-container .my-offers .other-offers .offer2 {
+    width: 45%;
+    height: 100%;
+    background-color: rgba(240, 248, 255, 0.226);
+}
+
+.offers-container .my-offers .other-offers h4 {
+    text-align: center;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.offers-container .my-offers .other-offers .product-image {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #222;
+    height: 130px;
+}
+
+.offers-container .my-offers .other-offers .buyNowBtn {
+    width: 100%;
+    background-color: #444;
+    height: 32px;
+    margin-top: 10px;
+}
+
+.offers-container .my-offers .other-offers .buyNowBtn button {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.5s ease all;
+}
+
+.offers-container .my-offers .other-offers .buyNowBtn button:hover {
+    cursor: pointer;
+    color: yellowgreen;
+    font-size: 17px;
+}
+
+/* marketing tips*/
+.marketing {
+    margin-top: 30px;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.marketing .marketing-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.marketing .marketing-content .tip {
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transition: 0.5s ease all;
+}
+
+.marketing .marketing-content .tip p {
+    font-size: 16px;
+}
+
+.marketing .marketing-content .tip i {
+    margin-right: 16px;
+    font-size: 24px;
+}
+.marketing .marketing-content .tip:hover {
+    color: yellowgreen;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/*divider section*/
+
+.divider {
+    padding-top: 140px;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 20px;
+}
+.divider .divider-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+
+.divider .divider-section .header {
+    width: 30%;
+    color: white;
+    font-size: 30px;
+}
+
+.divider .divider-section .hr {
+    width: 85%;
+}
+
+/*featured section styling*/
+
+.featured-products {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: 20px;
+    padding-bottom: 40px;
+}
+
+.featured-products .featured-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.featured-products .featured-content .card {
+    width: calc(25% - 30px);
+    height: 420px;
+    margin-top: 20px;
+    margin-left: 30px;
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(157, 157, 200, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all ease 0.7s;
+}
+
+.featured-products .featured-content .card:hover {
+    background-color: rgba(157, 157, 200, 0.55);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.featured-products .featured-content .card .remaining-items {
+    background-color: green;
+    width: 100px;
+    height: 30px;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+.featured-products .featured-content .card .remaining-items p {
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+
+.featured-products .featured-content .card  .product-pic {
+    height: 280px;
+    width: 80%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: gray;
+}
+
+.featured-products .featured-content .card .prices-and-name h3 {
+    color: white;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.featured-products .featured-content .card .prices-and-name p {
+    color: gold;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.featured-products .featured-content .card .buyNowBtn {
+    width: 100%;
+    background-color: #444;
+    height: 32px;
+    margin-top: 10px;
+    border: 1px rgba(255, 255, 255, 0.377) solid;
+    
+}
+
+.featured-products .featured-content .buyNowBtn button {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.5s ease all;
+}
+
+.featured-products .featured-content .buyNowBtn button i {
+    margin-left: 20px;
+}
+
+.featured-products .featured-content .buyNowBtn button:hover {
+    cursor: pointer;
+    background-color: #333;
+    color: yellowgreen;
+    font-size: 16.5px;
+}
+
+/* ad section styling*/
+
+.ad-section {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+}
+
+.ad-section .my-ad {
+    width: 100%;
+    height: 300px;
+    background-color: blanchedalmond;
+}
+
+/*footer styling*/
+.footer {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 6px;
+    background-color: rgba(30, 20, 50, 0.45);
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+footer .div-1 {
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .div-1 h1,
+footer .div-1 h4 {
+    color: white;
+}
+
+footer  h4 {
+    text-decoration: underline;
+}
+footer .div-1 h1 {
+    text-align: center;
+}
+footer .div-1 h1  i{
+    color: yellowgreen;
+}
+footer .div-1 p {
+    color: white;
+    margin-top: 10px;
+}
+
+footer .div-1 a {
+    color: white;
+}
+footer .div-2 {
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+footer .find-us {
+    height: 100%;
+}
+
+footer .find-us a,
+footer .find-us h4,
+.div-3 h4 {
+    color: white;
+    transition: all ease 0.5s;
+}
+
+footer .find-us p {
+    margin-top: 10px;
+    transition: all ease 0.5s;
+}
+footer .div-3 {
+    width: 30%;
+}
+
+footer .div-3 input,
+footer .div-3 i {
+    margin-top: 10px;
+    transition:  all ease 0.5s;
+}
+
+footer .div-3 i {
+    margin-left: 10px;
+    color: white;
+    font-size: 24px;
+}
+
+footer a:hover,
+footer i:hover, 
+footer p:hover{
+    font-weight: 600;
+    color: yellowgreen;
+    cursor: pointer;
+}
+
+.footer .copyright {
+    margin-top: 6px;
+    text-align: center;
+    color: white;
+    align-items: center;
+}
+
+.footer .copyright a {
+    color: dodgerblue;
+}
+
+.footer .copyright a:hover {
+    color: yellowgreen;
+}
+
+
+/*responsive design*/
+
+/*tablet view*/
+@media (min-width: 768px) and (max-width: 1024px) {
+    .navBar .logo {
+        width: 25%;
+    }
+    .navBar .logo a h1 {
+        font-size: 24px;
+        margin-left: 10px;
+    }
+    .navBar .menu-container {
+        width: 75%;
+    }
+    .navBar .menu-container .menu-ribbon li{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .navBar .menu-container .menu-ribbon li a {
+        color: white;
+        font-size: 14px;
+        transition: 0.3s ease all;
+    }
+    /*divider section*/
+    
+    .divider .divider-section .header {
+        width: 40%;
+        color: white;
+        font-size: 26px;
+    }
+    
+    .divider .divider-section .hr {
+        width: 60%;
+    }
+
+    .featured-products .featured-content .card {
+        width: calc(33.330% - 30px);
+        height: 400px;
+        margin-top: 20px;
+        padding: 6px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(157, 157, 200, 0.4);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .featured-products .featured-content .card .remaining-items {
+        background-color: green;
+        width: 100px;
+        height: 30px;
+        border-radius: 6px;
+        padding: 6px;
+    }
+    
+    .featured-products .featured-content .card .remaining-items p {
+        font-size: 14px;
+        color: white;
+        text-align: center;
+    }
+    
+    .featured-products .featured-content .card  .product-pic {
+        height: 280px;
+        width: 80%;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: gray;
+    }
+
+    .footer .div-1,
+    .footer .div-2{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .footer .div-2 {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .footer .div-1 .logo {
+        width: 35%;
+    }
+
+    
+
+    .footer .div-1 .find-us {
+        width: 35%;
+        height: 100%;
+    }
+
+    .footer .div-2 .find-us {
+        width: 25%;
+    }
+}
+
+/* lerger devices */
+@media (max-width: 767px) {
+
+    .navBar .logo {
+        width: 25%;
+    }
+    .navBar .logo a h1 {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+    .navBar .menu-container {
+        width: 75%;
+    }
+    .navBar .menu-container .search-and-other-icons {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .navBar .menu-container .search-and-other-icons .input {
+        width: 30%;
+    }
+    .navBar .menu-container .search-and-other-icons p {
+        color: white;
+        font-size: 11px;
+        margin-right: 6px;
+        transition: 0.3s ease all;
+    }
+    .navBar .menu-container .menu-ribbon li{
+        margin-left: 6px;
+        margin-right: 0px;
+    }
+    
+    .navBar .menu-container .menu-ribbon li a {
+        color: white;
+        font-size: 12px;
+        transition: 0.3s ease all;
+    }
+
+    
+    /* offers section styling */
+    .offers-container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .offers-container .offers-slideshow {
+        width: 95%;
+        height: 420px;
+        background-color: gray;
+        margin-bottom: 20px;
+    }
+    
+    .offers-container .my-offers {
+        width: 95%;
+        height: 420px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .marketing .marketing-content .tip {
+        margin-top: 20px;
+    }
+
+    /*divider section*/
+    .divider .divider-section .header {
+        width: 40%;
+        color: white;
+        font-size: 26px;
+    }
+    
+    .divider .divider-section .hr {
+        width: 60%;
+    }
+
+    /*divider section*/
+    .divider .divider-section .header {
+        width: 60%;
+        color: white;
+        font-size: 20px;
+    }
+    
+    .divider .divider-section .hr {
+        width: 70%;
+    }
+
+
+    .featured-products .featured-content .card {
+        width: calc(50% - 30px);
+        height: 400px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 6px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(157, 157, 200, 0.4);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .footer {
+        padding: 0;
+    }
+
+    .footer .div-1,
+    .footer .div-2 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .footer .div-2 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .footer .div-1,
+    .footer .div-2 {
+        width: 100%;
+    }
+
+}
+
+
+/*small screen devices*/
+@media (max-width: 490px) {
+    /* offers section styling */
+    .navBar .logo {
+        width: 40%;
+    }
+    .navBar .logo a h1 {
+        font-size: 17px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .navBar .menu-container {
+        width: 60%;
+    }
+    .navBar .menu-container .search-and-other-icons {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .navBar .menu-container .search-and-other-icons .input {
+        width: 40%;
+    }
+
+    .navBar .menu-container .search-and-other-icons .top_menu p {
+        display: none;
+    }
+
+
+    .top_menu_bars {
+        color: white;
+        display: block;
+        z-index: 999;
+    }
+
+    
+
+    .navBar .menu-container .menu-ribbon li  {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+
+    .menu-ribbon.active {
+        left: 0%;
+        background-color: rgba(30, 20, 50);
+    }
+
+    .menu-ribbon {
+        transition: all ease 0.9s;
+        position: absolute;
+        left: -100%;
+        top: 30px;
+    }
+
+    .menu-ribbon .active {
+        left: 0%;
+    }
+
+
+    .offers-container {
+        padding-top: 70px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .offers-container .offers-slideshow {
+        width: 95%;
+        height: 420px;
+        background-color: gray;
+        margin-bottom: 20px;
+    }
+    
+    .offers-container .my-offers {
+        width: 95%;
+        height: 420px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .marketing .marketing-content .tip {
+        width: 40%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        color: white;
+        transition: 0.5s ease all;
+    }
+    
+    .marketing .marketing-content .tip p {
+        font-size: 14px;
+    }
+    
+    .marketing .marketing-content .tip i {
+        font-size: 20px;
+        margin-right: 7px;
+    }
+
+    .divider {
+        padding-top: 80px;
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .divider .divider-section .header {
+        width: 60%;
+        color: white;
+        font-size: 16px;
+    }
+    
+    .divider .divider-section .hr {
+        width: 60%;
+    }
+
+    .featured-products {
+       width: 100%;
+       padding-left: 12px;
+       padding-right: 12px;
+       margin-top: 20px;
+       padding-bottom: 40px;
+    }
+
+    .ad-section {
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-bottom: 20px;
+    }
+    .featured-products .featured-content .card {
+        width: calc(100% - 10px);
+        height: 400px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 6px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(157, 157, 200, 0.4);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .footer {
+        padding: 0;
+        padding-top: 50px;
+    }
+
+    .footer .div-1,
+    .footer .div-2 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .footer .div-1 .logo {
+        margin-bottom: 30px;
+    }
+    .footer .div-2 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .footer .div-1,
+    .footer .div-2 {
+        width: 100%;
+    }
+
+    .find-us {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer .div-3 {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .footer .copyright p {
+        font-size: 12px;
+    }
+}

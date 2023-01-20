@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painles Duck</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/06402d5eb2.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+</head>
+<body>
+
+    <!-- navigation bar -->
+    <nav class="navBar">
+
+        <div class="logo">
+            <a href="#"> 
+                <h1>
+                    <i class="fa fa-shield" aria-hidden="true"></i> <br>
+                    Painless Duck</h1>
+            </a>
+        </div>
+
+        <div class="menu-container">
+            <div class="search-and-other-icons">
+
+                <input type="search" name="search" id="" placeholder="Search" class="input">
+                
+                <div class="top_menu"><i class="fas fa-map-marker"></i><p> Murang'a, Kenya</p></div>
+
+                <div class="top_menu"><i class="fas fa-shopping-cart"></i><p> My cart</p></div>
+
+                <div class="top_menu"><i class="fas fa-user-circle"></i><p> Username</p></div>
+
+                <div class="top_menu_bars" onclick="clickFunction()"><i class="fas fa-bars"></i></div>
+            </div>
+
+            <div class="menu-ribbon">
+
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#featured">Featured</a></li>
+                    <li><a href="#for-you">Offers</a></li>
+                    <li><a href="#">Partnership</a></li>
+                    <li><a href="#">Featured</a></li>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <section class="offers-container" id="home">
+        <div class="offers-slideshow">
+            <img src="images/headphones_offer.jpg" height="420px" width="100%" alt="">
+        </div>
+
+        <div class="my-offers">
+            <div class="pc-offer">
+
+                <img src="images/pic_1.png" height="200px" width="100%" alt="">
+            </div>
+
+            <div class="other-offers">
+                <div class="offer1">
+                    <h4>Asus rog 5</h4>
+
+                    
+                    <div class="product-image">
+
+                        <img src="images/asus-rog_1.jpg" height="100%" width="100%" alt="">
+
+                    </div>
+
+                    <div class="buyNowBtn">
+                        <button>Shop now</button>
+                    </div>
+                </div>
+
+                <div class="offer2">
+
+                    <h4>Logitech HP65</h4>
+
+                    <div class="product-image">
+
+                        <img src="images/logitech_headphones.jpg" height="100%" width="100%" alt="">
+                    </div>
+
+                    <div class="buyNowBtn">
+                        <button>Shop now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- marketing -->
+    <section class="marketing">
+
+        <div class="marketing-content">
+            <div class="tip">
+                <i class="fa fa-smile-o" aria-hidden="true"></i>
+                <div class="p-tag">
+                    <p>100% satisfaction <br>
+                    if you purchase</p>
+                </div>
+            </div>
+
+            <div class="tip">
+                <i class="fas fa-paper-plane"></i>
+                <div class="p-tag">
+                    <p>fast shipping <br>
+                    if you purchase</p>
+                </div>
+            </div>
+
+            <div class="tip">
+                <i class="fas fa-thumbs-up"></i>
+                <div class="p-tag">
+                    <p>save 20% if you <br>
+                     use credit card</p>
+                </div>
+            </div>
+
+            <div class="tip">
+                <i class="fas fa-mobile"></i>
+                <div class="p-tag">
+                    <p>14 days refund if<br>
+                    you use credit card</p>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- divider section -->
+    <section class="divider" id="featured">
+        <div class="divider-section">
+            
+            <div class="header"><h3>Featured products</h4></div>
+            <div class="hr">  <hr> </div>
+
+        </div>
+    </section>
+
+    <section class="featured-products">
+        <div class="featured-content">
+
+
+            <div class="card">
+                <div class="remaining-items">
+                    <p>In stock: 278</p>
+                </div>
+
+                <div class="product-pic">
+
+                    <img src="images/gaming_chair1.jpg" height="100%" width="100%" alt="">
+                </div>
+
+                <div class="prices-and-name">
+                    <h3>Longitech gaming chair</h3>
+                    <p>Ksh: 8,500/=</p>
+                </div>
+
+                <div class="buyNowBtn">
+                    <button>Shop now <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="remaining-items">
+                    <p>In stock: 278</p>
+                </div>
+
+                <div class="product-pic">
+
+                    <img src="images/gaming_pc1.jpg" height="100%" width="100%" alt="">
+                </div>
+
+                <div class="prices-and-name">
+                    <h3>Dell gaming</h3>
+                    <p>Ksh: 120,000/=</p>
+                </div>
+
+                <div class="buyNowBtn">
+                    <button>Shop now <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="remaining-items">
+                    <p>In stock: 278</p>
+                </div>
+
+                <div class="product-pic">
+                    <img src="images/mon_1.jpg" height="100%" width="100%" alt="">
+
+                </div>
+
+                <div class="prices-and-name">
+                    <h3>Innocn gaming monitor</h3>
+                    <p>Ksh: 30,000/=</p>
+                </div>
+ 
+                <div class="buyNowBtn">
+                    <button>Shop now <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="remaining-items">
+                    <p>In stock: 278</p>
+                </div>
+
+                <div class="product-pic">
+                    <img src="images/xbox_2.jpg" height="100%" width="100%" alt="">
+
+                </div>
+
+                <div class="prices-and-name">
+                    <h3>xbox one pro</h3>
+                    <p>Ksh: 30,000/=</p>
+                </div>
+ 
+                <div class="buyNowBtn">
+                    <button>Shop now <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="remaining-items">
+                    <p>In stock: 278</p>
+                </div>
+
+                <div class="product-pic">
+
+                    <img src="images/gaming_chair2.jpg" height="100%" width="100%" alt="">
+                </div>
+
+                <div class="prices-and-name">
+                    <h3>Generic gaming chair</h3>
+                    <p>Ksh: 10,000/=</p>
+                </div>
+
+                <div class="buyNowBtn">
+                    <button>Shop now <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="remaining-items">
+                    <p>In stock: 278</p>
+                </div>
+
+                <div class="product-pic">
+
+                    <img src="images/ps5.jpg" height="100%" width="100%" alt="">
+                </div>
+
+                <div class="prices-and-name">
+                    <h3>PS5 brand new!!</h3>
+                    <p>Ksh: 4,700/=</p>
+                </div>
+
+                <div class="buyNowBtn">
+                    <button>Shop now <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    
+    <section class="ad-section">
+        <div class="my-ad">
+
+            <img src="images/rts_ad.jpg" height="100%" width="100%" alt="">
+        </div>
+    </section>
+
+        <!-- divider section -->
+        <section class="divider" id="for-you">
+            <div class="divider-section">
+                
+                <div class="header"><h3>Products for you</h4></div>
+                <div class="hr">  <hr> </div>
+    
+            </div>
+        </section>
+
+
+        <section class="featured-products" >
+            <div class="featured-content">
+    
+    
+                <div class="card">
+                    <div class="remaining-items">
+                        <p>In stock: 278</p>
+                    </div>
+    
+                    <div class="product-pic">
+    
+                        <img src="images/pad1.jpg" height="100%" width="100%" alt="">
+                    </div>
+    
+                    <div class="prices-and-name">
+                        <h3>PS4 slim pad</h3>
+                        <p>Ksh: 6,000/=</p>
+                    </div>
+    
+                    <div class="buyNowBtn">
+                        <button>Shop now <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="remaining-items">
+                        <p>In stock: 278</p>
+                    </div>
+    
+                    <div class="product-pic">
+    
+                        <img src="images/gaming_pc3.jpeg" height="100%" width="100%" alt="">
+                    </div>
+    
+                    <div class="prices-and-name">
+                        <h3>HP pavilion gaming</h3>
+                        <p>Ksh: 90,000/=</p>
+                    </div>
+    
+                    <div class="buyNowBtn">
+                        <button>Shop now <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+    
+                <div class="card">
+                    <div class="remaining-items">
+                        <p>In stock: 278</p>
+                    </div>
+    
+                    <div class="product-pic">
+    
+                        <img src="images/pad2.jpeg" height="100%" width="100%" alt="">
+                    </div>
+    
+                    <div class="prices-and-name">
+                        <h3>Ps4 controler</h3>
+                        <p>Ksh: 20,000/=</p>
+                    </div>
+    
+                    <div class="buyNowBtn">
+                        <button>Shop now <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+    
+               <div class="card">
+                    <div class="remaining-items">
+                        <p>In stock: 278</p>
+                    </div>
+    
+                    <div class="product-pic">
+    
+                        <img src="images/gaming_pc2.jpg" height="100%" width="100%" alt="">
+                    </div>
+    
+                    <div class="prices-and-name">
+                        <h3>Asus gaming tower</h3>
+                        <p>Ksh: 20,000/=</p>
+                    </div>
+     
+                    <div class="buyNowBtn">
+                        <button>Shop now <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="remaining-items">
+                        <p>In stock: 278</p>
+                    </div>
+    
+                    <div class="product-pic">
+    
+                        <img src="images/ps4_1.jpg" height="100%" width="100%" alt="">
+                    </div>
+    
+                    <div class="prices-and-name">
+                        <h3>Sony Ps4</h3>
+                        <p>Ksh: 26,000/=</p>
+                    </div>
+     
+                    <div class="buyNowBtn">
+                        <button>Shop now <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="remaining-items">
+                        <p>In stock: 278</p>
+                    </div>
+    
+                    <div class="product-pic">
+    
+                        <img src="images/ps4_2.jpeg" height="100%" width="100%" alt="">
+                    </div>
+    
+                    <div class="prices-and-name">
+                        <h3>Slim Ps4 2019</h3>
+                        <p>Ksh: 23,500/=</p>
+                    </div>
+     
+                    <div class="buyNowBtn">
+                        <button>Shop now <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="remaining-items">
+                        <p>In stock: 278</p>
+                    </div>
+    
+                    <div class="product-pic">
+                        <img src="images/mon_1.jpg" height="100%" width="100%" alt="">
+    
+                    </div>
+    
+                    <div class="prices-and-name">
+                        <h3>Innocn gaming monitor</h3>
+                        <p>Ksh: 30,000/=</p>
+                    </div>
+     
+                    <div class="buyNowBtn">
+                        <button>Shop now <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="remaining-items">
+                        <p>In stock: 278</p>
+                    </div>
+    
+                    <div class="product-pic">
+                        <img src="images/xbox_1.jpg" height="100%" width="100%" alt="">
+    
+                    </div>
+    
+                    <div class="prices-and-name">
+                        <h3>xbox one </h3>
+                        <p>Ksh: 33,550/=</p>
+                    </div>
+     
+                    <div class="buyNowBtn">
+                        <button>Shop now <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="remaining-items">
+                        <p>In stock: 278</p>
+                    </div>
+    
+                    <div class="product-pic">
+                        <img src="images/mon_2.jpg" height="100%" width="100%" alt="">
+    
+                    </div>
+    
+                    <div class="prices-and-name">
+                        <h3>Asus rog monitor</h3>
+                        <p>Ksh: 60,000/=</p>
+                    </div>
+     
+                    <div class="buyNowBtn">
+                        <button>Shop now<i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="remaining-items">
+                        <p>In stock: 278</p>
+                    </div>
+    
+                    <div class="product-pic">
+                        <img src="images//gamingkeyboard.jpg" height="100%" width="100%" alt="">
+    
+                    </div>
+    
+                    <div class="prices-and-name">
+                        <h3>Generic gaming keyboard</h3>
+                        <p>Ksh: 3,000/=</p>
+                    </div>
+     
+                    <div class="buyNowBtn">
+                        <button>Shop now <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>   
+        
+        <section class="footer" id="contacts">
+            <footer>
+                <div class="div-1">
+                    <div class="logo">
+                        <a href="#"> 
+                            <h1>
+                                <i class="fas fa-shield"></i> <br>
+                                Painless Duck</h1>
+                        </a>
+
+                        <p>P.o Box 233-3323, Murang'a</p>
+                        <p><a href="mailto:wambuadaniel2001@gmail.com">wambuadaniel@gmail.com</a></p>
+                        <p>Phone: <a href="tel:+254727505049">0727505029</a></p>
+                    </div>
+
+                    <div class="find-us">
+                        <h4><u>Fund Us At</u></h4>
+                        <p>Nairobi, Upper hill</p>
+                        <p>Murang'a, MUT</p>
+                        <p>Machakos, Kiamba Mall</p>
+                        <p>Mombasa, Kiamba Mall</p>
+                    </div>
+                </div>
+
+                <div class="div-2">
+
+                    <div class="find-us">
+                        <h4><u>Social media</u></h4>
+                        <p><a href="#">Facebook</a></p>
+                        <p><a href="#">Instagram</a></p>
+                        <p><a href="#">Twitter</a></p>
+                        <p><a href="#">TikTok</a></p>
+                    </div>
+
+                    <div class="find-us">
+                        <h4><u>Quick Links</u></h4>
+                        <p><a href="#">Blog</a></p>
+                        <p><a href="#">Partnerships</a></p>
+                        <p><a href="#About us">New products</a></p>
+                        
+                    </div>
+
+                    <div class="div-3">
+                        <u><h4>News Letter</h4></u>
+                        <input type="email" name="" id="" placeholder="Email">
+    
+                        <p><i class="fa fa-facebook"></i>
+                            <i class="fa fa-twitter"></i>
+                            <i class="fa fa-instagram"></i>
+                            <i class="fa fa-telegram"></i></p>
+    
+                    </div>
+
+                </div>
+
+                
+            </footer>
+
+            <hr>
+            <div class="copyright">
+                <p>Created by <a href="#">Painless Duck ltd</a> | &copy; 2023 All rights reserved.</p>
+            </div>
+        </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
