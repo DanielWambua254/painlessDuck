@@ -10,6 +10,9 @@
 
 body {
     background-color: rgba(30, 20, 50, 0.85);
+    max-width: 1380px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 html {
@@ -23,6 +26,9 @@ html {
     display: flex;
     flex-direction: row;
     align-items: center;
+    max-width: 1380px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .navBar.activeNavBar {
